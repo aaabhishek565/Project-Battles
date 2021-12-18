@@ -1,0 +1,15 @@
+import java.util.*;
+public class PRO1 {
+   public static void main(String[] args)
+    {
+      Calendar cal = Calendar.getInstance();
+      Date currentdate = cal.getTime();
+      cal.add(Calendar.YEAR, 1); 
+      Date newyear = cal.getTime();
+      cal.add(Calendar.YEAR, -2); 
+      Date previousyear = cal.getTime();
+      System.out.println("\nCurrent Date : " + currentdate);
+      System.out.println("\nDate before 1 year : " + previousyear);
+      System.out.println("\nDate after 1 year  : " + newyear+"\n");  	
+    }
+}
